@@ -14,21 +14,6 @@
     <link rel="canonical" href="https://uselooper.com">
     <meta property="og:url" content="https://uselooper.com">
     <meta property="og:site_name" content="Looper - Bootstrap 4 Admin Theme">
-    <script type="application/ld+json">
-      {
-        "name": "Looper - Bootstrap 4 Admin Theme",
-        "description": "Responsive admin theme build on top of Bootstrap 4",
-        "author":
-        {
-          "@type": "Person",
-          "name": "Beni Arisandi"
-        },
-        "@type": "WebSite",
-        "url": "",
-        "headline": "Basic Table",
-        "@context": "http://schema.org"
-      }
-    </script><!-- End SEO tag -->
     <script type="text/javascript">
       // 주소창 자동 닫힘
       window.addEventListener("load", function(){
@@ -66,39 +51,59 @@
     </script><!-- END THEME STYLES -->
   </head>
   <body>
-    <!-- .app -->
-    <div class="app pda_mo_wrap">
+<!-- .app -->
+<div class="app">
+  <div id="messageBox" class="alert alert-danger has-icon d-none" role="alert">
+      <div class="alert-icon">
+          <span class="fa fa-info"></span>
+      </div>
+      <h5>오류</h5>
+      <span id="message"></span>
+  </div>   
+<div class="container-fluid" id="main">		
+ <div class="row login_card">				
+      <div class="col-md-6 login_left">
+        <p>스마트선반</p>
+        <p>운영관리시스템</p>
 
-      <main>
-          <div class="container-fluid" id="main">
-            <div class="text-center p-5 mt-5">
-              <img src="assets/images/mo_main_logo.png">
+      </div>
+      <div class="col-md-6">
+        <h4 class="login-header">로그인</h4>
+        <form class="login-form" id="loginForm">
+          <!-- .form-group -->
+          <div class="form-mb">
+              <input style="max-width:100%" type="text" id="inputUser" class="form-control-lg" placeholder="아이디 - Web"> 
+          </div><!-- /.form-group -->
+          <!-- .form-group -->
+          <div class="form-mb">
+              <input style="max-width:100%" type="password" id="inputPassword" class="form-control-lg" placeholder="비밀번호">
+          </div><!-- /.form-group -->
+          <!-- .form-group -->
+          <div class="form-mb">
+            <button class="login_btn btn btn-lg btn-primary btn-block" type="submit">로그인</a></button>
+          </div><!-- /.form-group -->
+          <!-- .form-group -->
+          
+          <!-- 
+          <div class="form-mb text-center mt-3">
+            <div class="custom-control custom-control-inline custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="rememberMe" name="rememberMe"> <label class="custom-control-label" for="rememberMe">자동 로그인</label>
             </div>
-            <div class="p-4">
-             <form class="login-form">
-               <!-- .form-group -->
-               <div class="form-mb">
-                   <input style="max-width:100%" type="text" id="" class="form-control-lg" placeholder="아이디" autofocus=""> 
-               </div><!-- /.form-group -->
-               <!-- .form-group -->
-               <div class="form-mb">
-                   <input style="max-width:100%" type="password" id="" class="form-control-lg" placeholder="비밀번호">
-               </div><!-- /.form-group -->
-               <!-- .form-group -->
-                    <div class="form-mb text-center mt-3">
-                      <div class="custom-control custom-control-inline custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="remember-me"> <label class="custom-control-label" for="remember-me">자동 로그인</label>
-                      </div>
-                    </div><!-- /.form-group -->
-               <!-- .form-group -->
-               <div class="form-mb mt-4">
-                 <button class="login_btn btn btn-lg btn-block" type=""><a href="#">로그인</a></button>
-               </div><!-- /.form-group -->
-             </form><!-- /.auth-form -->
-            </div>
-        </div>
-      </main>
-    </div><!-- /.app -->
+          </div>
+           -->
+          
+          <!-- /.form-group -->
+          </div><!-- /.form-group -->
+          <!-- 
+          <div class="text-center pt-3">
+            <a href="#" class="link">아이디 찾기</a> <span class="mx-2">·</span> <a href="#" class="link">비밀번호 찾기</a>
+          </div>
+           -->
+        </form><!-- /.auth-form -->
+      </div>
+</div>
+</div>
+</div><!-- /.app -->
     <!-- BEGIN BASE JS -->
     <script src="assets/vendor/jquery/jquery.min.js"></script>
     <script src="assets/vendor/bootstrap/js/popper.min.js"></script>
