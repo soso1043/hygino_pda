@@ -721,7 +721,7 @@ input[type=number]::-webkit-inner-spin-button{-webkit-appearance: none;margin: 0
 	 margin-top: 15%;
 	 background-image: url(../images/login_mo_bg.png);
 	 background-repeat: no-repeat;
-     background-size: cover;
+   background-size: cover;
 	}
 	.login_left{
      padding-top: 9rem;
@@ -739,6 +739,9 @@ input[type=number]::-webkit-inner-spin-button{-webkit-appearance: none;margin: 0
 	.login-header{
 	 display:none;
 	}
+  #calendar{
+	 display: none!important;;
+  }
 }
 /*------------end-----소정_수정_추가-----------------*/
 .tableSelected { background-color : #0275d8 }
@@ -844,7 +847,18 @@ input[type=number]::-webkit-inner-spin-button{-webkit-appearance: none;margin: 0
   footer{
     margin-top: auto;
   }
-
+  .pda_scan_btn{
+    width: 100%;
+    padding: 0.6rem 0;
+    background-color: #007FFF;
+    color: #fff;
+    font-size: 1.3rem;
+    text-align: center;
+    background-image: url(../images/scan.png);
+    background-repeat: no-repeat;
+    background-position: 110px;
+    border: none;
+  }
 /*========pda_003자재입고=========*/
 
 .mo_main_title{
@@ -859,7 +873,7 @@ input[type=number]::-webkit-inner-spin-button{-webkit-appearance: none;margin: 0
 }
 .mo_sortbox{
   width: 100%;
-  padding: 0 6px;
+  padding: 0.5rem;
   margin: 10px auto;
 }
 .mo_sort_title{
@@ -876,6 +890,8 @@ input[type=number]::-webkit-inner-spin-button{-webkit-appearance: none;margin: 0
 }
 .mo_card{
   background-color: #fff;
+  box-shadow: 0px 1px 2px 1px rgba(0,0,0,0.1);
+
 }
 .mo_card td{
   padding: 0.4rem;
@@ -895,6 +911,16 @@ input[type=number]::-webkit-inner-spin-button{-webkit-appearance: none;margin: 0
   height: auto;
   padding: 10px;
   background-color: #f6f7f9;
+}
+.pda_btnbox_r{
+  float: right;
+  padding: 0.25rem;
+}
+
+.mo_sortbox::after{
+  content: '';
+  display: block;
+  clear: both;
 }
 /*========pda_004자재입고=========*/
 .mo_card_fix{

@@ -1767,7 +1767,7 @@ pre code {
 .table .thead-light th {
   color: #363642;
   background-color: #f6f7f9;
-  border-color: #1px solid #dee2e6;
+  border-color: 1px solid #dee2e6;
   text-align: center;
 }
 
@@ -1863,10 +1863,12 @@ pre code {
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
 }
-
+/*
 .table-responsive > .table-bordered {
-  /*border: 0;*/
+  border: 0;
 }
+*/
+
 /*소정수정-달력 input padding 수정,font-size수정*/
 .form-control {
   display: block;
@@ -14016,11 +14018,11 @@ a.card-footer-item.text-muted:hover, a.card-footer-item.text-muted:focus {
   border-width: 0 0 3px;
   border: 1px solid #ccc;
 }
-
+/*
 .nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
-  /*color: #222230;*/
+  color: #222230;
 }
-
+*/
 .nav-tabs.flex-column .nav-link {
   border-width: 0 0 0 3px;
   border-radius: 0;
@@ -15888,12 +15890,14 @@ a.text-box:hover, a.text-box:focus {
 }
 
 /** collapsible on compact mode */
+/* 
 .stacked-menu-has-collapsible.stacked-menu-has-compact {
-  /** hide caret on level 1 */
-  /** child level 2 up */
+  hide caret on level 1
+  child level 2 up 
 }
-
-.stacked-menu-has-collapsible.stacked-menu-has-compact > .menu > .has-child > .menu {
+*/
+.stack
+ed-menu-has-collapsible.stacked-menu-has-compact > .menu > .has-child > .menu {
   transform-origin: 0 0;
   transform: scale(0.6);
   transition: opacity 150ms linear, transform 150ms linear;

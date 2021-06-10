@@ -14,21 +14,6 @@
     <link rel="canonical" href="https://uselooper.com">
     <meta property="og:url" content="https://uselooper.com">
     <meta property="og:site_name" content="Looper - Bootstrap 4 Admin Theme">
-    <script type="application/ld+json">
-      {
-        "name": "Looper - Bootstrap 4 Admin Theme",
-        "description": "Responsive admin theme build on top of Bootstrap 4",
-        "author":
-        {
-          "@type": "Person",
-          "name": "Beni Arisandi"
-        },
-        "@type": "WebSite",
-        "url": "",
-        "headline": "Basic Table",
-        "@context": "http://schema.org"
-      }
-    </script><!-- End SEO tag -->
     <script type="text/javascript">
       // 주소창 자동 닫힘
       window.addEventListener("load", function(){
@@ -67,7 +52,7 @@
   </head>
   <body>
     <!-- .app -->
-    <div class="app pda_mo_wrap">
+    <div class="app pda_app">
       <header class="pda_mo_hd">
         <div class="float-left">
          <a href="#"><img class="p-2" src="assets/images/mo_home_wh.png"></a>
@@ -79,38 +64,44 @@
       <main>
         <div class="container-fluid" id="main">
           <!--====-sortbox-->
-          <div class="mo_sortbox">
-            <div class="col-12 row p-1">
-             <div class="col-3 mo_sort_title">입고일</div>
-             <div class="form-group input-sub col-9 m-0 p-0">
-               <input class="form-control-md" type="text" id="startDate" name="startDate" value=""/>
+          <div class="mo_card mo_sortbox">
+            <section class="col-12 row p-1">
+             <div class="form-group input-sub col-12 m-0 p-0">
+               <input class="form-control-md" type="text" id="startDate" name="startDate" value="" placeholder="2021-06-10"/>
                <button onclick="fnPopUpCalendar(startDate,startDate,'yyyy-mm-dd');" class="btn btn-secondary input-sub-search-md" type="button">
                 <span class="oi oi-calendar"></span>
                </button> 
              </div>
-            </div>
-            <div class="col-12 row p-1">
-             <div class="col-3 mo_sort_title">Location NO</div>
-             <div class="form-group input-sub col-9 m-0 p-0">
+            </section>
+            <div class="row">
+            <section class="col-6 row p-1">
+             <div class="form-group input-sub col-12 m-0 p-0">
               <select id="" class="custom-select custom-select-md">
                <option selected>전체</option>
                <option value="1">주간</option>
                <option value="1">야간</option>
               </select>
              </div>
-            </div>
-            <div class="col-12 row p-1">
-             <div class="col-3 mo_sort_title">Barcode NO</div>
-             <div class="form-group input-sub col-9 m-0 p-0">
+            </section>
+            <section class="col-6 row p-1">
+             <div class="form-group input-sub col-12 m-0 p-0">
              <input type="text" class="form-control-md" placeholder="">
             </div>
-            </div>
+            </section>
           </div>
+          <div class="pda_btnbox_r">
+            <button type="button" class="btn btn-secondary float-right" id="">취소</button>
+            <button class="btn btn-primary d-none" id="" type="button" disabled=""><span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> 처리중</button>
+         
+            <button type="button" class="btn btn-primary float-right mr-2" id="">저장</button>
+            <button class="btn btn-primary d-none" id="" type="button" disabled=""><span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> 처리중</button>
+          </div>	
+        </div>
           <!--==end==-sortbox-->
           <!--table-->
            <!-- .table-responsive -->
           <div class="card mo_card">
-            <div class="table-responsive">
+            <section class="table-responsive">
               <table id="" class="table table-bordered table-td-center">
                  <thead class="thead-light">
                   <tr>
@@ -131,29 +122,32 @@
                   </tr>
                 </tbody>
               </table>
-          </div>
+          </section>
           <!-- /.table-responsive -->
         </div><!--==end==card-->
         <!--==버튼영역-->
         <div class="mo_btnbox">
-        <div class="float-left">
+        <section class="float-left">
           <button type="button" class="btn btn-danger float-right" id="">라인삭제</button>
           <button class="btn btn-primary d-none" id="" type="button" disabled=""><span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> 처리중</button>
           <button type="button" class="btn btn-danger float-right mr-2" id="">전체삭제</button>
           <button class="btn btn-primary d-none" id="" type="button" disabled=""><span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> 처리중</button>
-        </div>	
-        <div class="float-right">
+        </section>	
+        <section class="float-right">
           <button type="button" class="btn btn-secondary float-right" id="">취소</button>
           <button class="btn btn-primary d-none" id="" type="button" disabled=""><span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> 처리중</button>
       
           <button type="button" class="btn btn-primary float-right mr-2" id="">저장</button>
           <button class="btn btn-primary d-none" id="" type="button" disabled=""><span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> 처리중</button>
-        </div>	
+        </section>	
         </div>
         <!--==end==버튼영역-->
         <!--==end==table-->
         </div>
       </main>
+      <footer class="pda_footer_btn">
+        <button class="pda_scan_btn">스캔</button>
+      </footer>
     </div><!-- /.app -->
     <!-- BEGIN BASE JS -->
     <script type="text/javascript" src="assets/javascript/pages/calendar.js"></script><!--소정추가-->
