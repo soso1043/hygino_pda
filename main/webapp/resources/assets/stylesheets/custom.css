@@ -1,0 +1,38 @@
+/* put your own styles to customize and override the theme */
+.left-top-half{
+    
+  height: 100%!important;
+  z-index: 10;
+  background: #fff;
+  overflow-x: hidden;
+  border: 1px solid #e3e3e3; 
+  right: 0;
+  padding: 10px;
+  min-height: 350px;
+  overflow-y: auto;
+  margin-right: 11px;
+}
+.right-top-half{
+    
+    height: 100%!important;
+    z-index: 10;
+    background: #fff;
+    overflow-x: hidden;
+    border: 1px solid #e3e3e3; 
+    right: 0;
+    padding: 10px;
+    min-height: 350px;
+    overflow-y: auto;
+    
+  }
+.left-bot-half{
+    height: 100%!important;
+    z-index: 10;
+    background: #fff;
+    overflow-x: hidden;
+    border: 1px solid #e3e3e3; 
+    right: 0;
+    padding: 10px;
+    min-height: 350px;
+    overflow-y: auto;
+  }
